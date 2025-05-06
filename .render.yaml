@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: aircom-server
+    env: php
+    buildCommand: ""
+    startCommand: ""
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: "8167466821:AAHUuWLllDKjFS7p6w6d2ZhdquAgGH703w4"
+      - key: TELEGRAM_CHAT_ID
+        value: "5224069990"
+      - key: MIKROTIK_IP
+        value: "192.168.1.254"
+      - key: MIKROTIK_USERNAME
+        value: "test"
+      - key: MIKROTIK_PASSWORD
+        value: "1234"
+      - key: FEDAPAY_PUBLIC_KEY
+        value: "pk_sandbox_qONi4_FxZS_G51ntA0sDCGes"
